@@ -26,3 +26,20 @@
 # letter_count('banana')
 #
 # > {'a': 3, 'b': 1, 'n': 2}
+
+letter_dictionary = {
+    "name": "andrewbantly"
+}
+
+letter_counter = {}
+
+def letter_count(key):
+    for letter in letter_dictionary[key]:
+        print(letter)
+        if letter in letter_counter:
+            letter_counter[letter] += 1
+        else:
+            letter_counter[letter] = 1
+    print(letter_counter)
+        
+letter_count("name")

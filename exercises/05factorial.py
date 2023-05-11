@@ -9,3 +9,13 @@
 #
 # > 120
 #
+
+def factorial(number):
+    i = 1 
+    output = 1
+    while i <= number:
+        output = output * i
+        i += 1
+    print(output)
+
+factorial(6)

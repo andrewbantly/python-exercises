@@ -10,3 +10,16 @@
 # multiply_by([1, 2, 3], 5)
 #
 # > [5, 10, 15]
+num_list = [1, 5, 10, 1239]
+
+result_list = []
+
+def multiply_by(list, num):
+    for number in list:
+        output = number * num
+        result_list.append(output)
+    print(result_list)
+
+multiply_by(num_list, 190)
+
+

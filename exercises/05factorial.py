@@ -19,3 +19,13 @@ def factorial(number):
     print(output)
 
 factorial(6)
+
+def factorial_alt(num):
+    # a running total of the factorial 
+    product = 1
+    # loop up to num (including num) and multiply by product
+    for i in range(1, num + 1):
+        product *= i
+    return product
+
+print(factorial_alt(5))

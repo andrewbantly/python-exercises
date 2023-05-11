@@ -28,18 +28,32 @@
 # > {'a': 3, 'b': 1, 'n': 2}
 
 letter_dictionary = {
-    "name": "andrewbantly"
+    "name": "andrewharrisonbantly"
 }
 
 letter_counter = {}
 
-def letter_count(key):
-    for letter in letter_dictionary[key]:
+def letter_count(word):
+    for letter in letter_dictionary[word]:
         print(letter)
         if letter in letter_counter:
             letter_counter[letter] += 1
         else:
             letter_counter[letter] = 1
     print(letter_counter)
-        
+
+def another_letter_count(word):
+    dd = {}
+    # iterate over the word
+    for char in word:
+        # if the char is found in the dictionary, increment it's value
+        if char in dd:
+            dd[char] += 1
+        # otherwise add it with a value of one
+        else:
+            dd[char] = 1
+    print(dd)
+
+another_letter_count("google")
+
 letter_count("name")

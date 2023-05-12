@@ -23,3 +23,11 @@ def multiply_by(list, num):
 multiply_by(num_list, 190)
 
 
+
+def multiply_by_alt(nums, operator):
+    for i in range(len(nums)):
+        nums[i] = nums[i] * operator
+    
+    return nums
+
+print(multiply_by_alt([1, 2, 3], 5))
